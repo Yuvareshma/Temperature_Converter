@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature_Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="temp_conv">
+            <h1>Temperature Converter</h1>
+            <div class="result"><h4>Result in Celsius</h4>
+                <h2 class="result_value" id="result"></h2>
+            </div>            
+            <div class="type">
+                <div class="input">
+                    <label for="input">Degree Input:</label>
+                    <input type="number" placeholder="Enter the degree value" id="degree">
+                </div>
+                <div class="input_type">
+                    <label for="type">Degree Type:</label>
+                    <select name="degree" id="degree-type" autocomplete="on">
+                        <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                    </select>                    
+                </div>                
+                <button id="convert">Convert</button>            
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
